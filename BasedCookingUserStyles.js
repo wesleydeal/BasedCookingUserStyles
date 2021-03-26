@@ -13,7 +13,7 @@ styles = {
     description: 'default (dark)',
     css: `
       body {
-        background: black;
+        background: #151515;
         color: white;
       }
       a {
@@ -60,6 +60,79 @@ styles = {
     li{
       margin: 4px 0;
     }
+    #artlist{
+      column-gap: 18px;
+    }
+    `
+  },
+  wip: {
+    description: 'wip',
+    css: `
+    body{
+      background: black;
+      color: #eee;
+      line-height: 1.4;
+      font-family: Roboto, 'Helvetica Neue', sans-serif;
+    }
+    h1{
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: 36px;
+    }
+    a{
+      color: #6dd;
+      text-decoration: none;
+    }
+    a:visited{
+      color: #4aa;
+    }
+    li{
+      margin: 6px 0;
+    }
+    ol,ul{
+      padding-left: 30px;
+    }
+    .recipestats{
+      list-style: none;
+      padding: 10px;
+      border: 2px solid #400;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .recipestats li{
+      display: flex;
+      margin: 0 30px;
+    }
+    .recipestats li:first-child, .recipestats li:last-child{
+      margin: 0;
+    }
+    #artlist{
+      column-gap: 18px;
+      list-style-type: none;
+      padding: 0;
+    }
+    `
+  },
+  comfy: {
+    description: 'navajo (el3ctr0lyte)',
+    css: `
+      body{
+        background: #200;
+        color: navajowhite;
+        font-family: Georgia, serif;
+      }
+      a{
+        color: gold;
+      }
+      a:visited{
+        color: darkgoldenrod;
+      }
+      h1{
+        border-bottom: 2px solid;
+      }
+      .banner hr{
+        display: none;
+      }
     `
   }
 }
@@ -97,3 +170,17 @@ styleselect.value = localStorage.getItem("currentstyle");
 styleselect.addEventListener('change', function() {
   setStyle(this.value);
 });
+
+// Add additional selectors to make styling easier
+
+if(document.querySelector('#artlist')){
+  document.body.classList.add("listing")
+} else {
+  document.body.classList.add("recipe")
+}
+
+for (const ul of document.querySelectorAll("ul")) {
+  if (ul.textContent.includes("⏲️ Prep time") || ul.textContent.includes("🍳 Cook time" || ul.textContent.includes("🍽️ Servings"))){
+    ul.classList.add("recipestats");
+  }
+}
