@@ -78,6 +78,13 @@ styles = {
       text-transform: uppercase;
       font-weight: normal;
       font-size: 36px;
+      text-align: left;
+    }
+    h2{
+      margin-bottom: 0;
+    }
+    .recipe h1{
+      border-bottom: 1px solid #fff;
     }
     a{
       color: #6dd;
@@ -91,19 +98,22 @@ styles = {
     }
     ol,ul{
       padding-left: 30px;
+      margin: 8px 0;
     }
     .recipestats{
       list-style: none;
-      padding: 10px;
-      border: 2px solid #400;
+      padding: 8px 16px;
+      background: #400;
+      text-transform: uppercase;
+      border-radius: 10px;
       display: flex;
-      justify-content: space-evenly;
+      column-gap: 30px;
+      width: fit-content;
+    }
+    img{
+      margin: 0;
     }
     .recipestats li{
-      display: flex;
-      margin: 0 30px;
-    }
-    .recipestats li:first-child, .recipestats li:last-child{
       margin: 0;
     }
     #artlist{
@@ -111,9 +121,20 @@ styles = {
       list-style-type: none;
       padding: 0;
     }
+    @media screen and (min-width: 1250px){
+      h2{
+        margin-left: -200px;
+        margin-bottom: -36px;
+        border-top: 1px solid #777;
+        padding-left: 5px;
+        font-weight: normal;
+        text-transform: uppercase;
+        padding-top: 10px;
+      }
+    }
     `
   },
-  comfy: {
+  navajo: {
     description: 'navajo (el3ctr0lyte)',
     css: `
       body{
