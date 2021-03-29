@@ -1,6 +1,6 @@
 # Based.Cooking User Styles
 
-Select an alterantive stylesheet for [based.cooking](https://based.cooking). Currently built as a userscript for browser extensions like [Violentmonkey](https://violentmonkey.github.io/), though the idea of a browser extension is being considered.
+Select an alternative stylesheet for [based.cooking](https://based.cooking). Currently built as a userscript for browser extensions like [Violentmonkey](https://violentmonkey.github.io/), though the idea of a browser extension is being considered.
 
 Want a style? Issues and pull requests are welcome.
 
