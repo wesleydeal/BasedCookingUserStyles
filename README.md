@@ -1,6 +1,7 @@
-# BasedCookingUserStyles
-userstyles for based.cooking, currently in the form of a userscript for browser extensions like violentmonkey
+# Based.Cooking User Styles
 
-want a style? issues and pull requests are welcome
+Select an alterantive stylesheet for [based.cooking](https://based.cooking). Currently built as a userscript for browser extensions like [Violentmonkey](https://violentmonkey.github.io/), though the idea of a browser extension is being considered.
 
-everything in this codebase is public domain
+Want a style? Issues and pull requests are welcome.
+
+Everything in this codebase is public domain. Don't submit code if this is a problem for you.
