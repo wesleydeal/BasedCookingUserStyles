@@ -65,8 +65,8 @@ styles = {
     }
     `
   },
-  wip: {
-    description: 'wip',
+  firstpass: {
+    description: 'first pass',
     css: `
     body{
       background: black;
@@ -153,6 +153,74 @@ styles = {
       }
       .banner hr{
         display: none;
+      }
+    `
+  },
+  retrowave: {
+    description: 'retrowave',
+    css: `
+      body{
+        background: repeating-radial-gradient(circle at 2vw 5vw,
+                                              rgba(255, 200, 150, 0.02),
+                                              rgba(255, 200, 150, 0.02) 10px,
+                                              rgba(255, 255, 255, 0) 10px,
+                                              rgba(255, 255, 255, 0) 20px),
+                    linear-gradient(-45deg, #000, #101 30%, #803);
+        font: 18px/1.4 monospace;
+        max-width: 1200px;
+        color: #fff;
+      }
+      footer a:nth-child(2){
+        content: '';
+        position: absolute;
+        left: -8vw;
+        top: -5vw;
+        display: block;
+        background: linear-gradient(45deg, #fcc 0%, #fa0 15%,#f50 80%);
+        box-shadow: 5px 5px 100px #f50;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 999px;
+        overflow: hidden;
+        z-index: -1;
+      }
+      a{
+        color: deepskyblue;
+      }
+      a:visited{
+        color: coral;
+      }
+      h1{
+        color: #0ff;
+        font-size: 64px;
+        padding: 5px 20px 10px;
+        margin: 20px 0 0 0;
+        font-weight: 700;
+        z-index: 120;
+        background: rgba(0,0,0,.8);
+        display: inline-block;
+        line-height: 1;
+      }
+      h2{
+        font-size: 1.7em;
+        color: #000;
+        margin: 20px 0 10px;
+        background: linear-gradient(120deg, #f90, #f60);
+        display: table;
+        padding: 5px 20px;
+        border: 0;
+        z-index: 140;
+        position: relative;
+      }
+      .listing h1{
+        font-size: 0;
+      }
+      .listing h1:after{
+        content: 'Based Cooking';
+        font-size: 64px;
+      }
+      hr{
+        border-color: orangered;
       }
     `
   }
